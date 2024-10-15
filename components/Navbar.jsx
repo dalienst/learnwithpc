@@ -9,7 +9,7 @@ function Navbar() {
     };
 
     return (
-        <nav className="bg-white shadow py-4">
+        <nav className="bg-white shadow py-4 sticky top-0">
             <div className="container-fluid px-3 mx-auto flex justify-between items-center">
                 <Link href="/" className="font-bold text-2xl ">
                     Learn with PC

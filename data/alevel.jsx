@@ -4,7 +4,7 @@ const alevel = [
     {
         id: "MCEOWZI37V",
         title: "Data Representation",
-        image: "/computer.png",
+        image: "/data.svg",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -29,7 +29,7 @@ const alevel = [
     {
         id: "MRTRFJLPKL",
         title: "Communication and internet technologies",
-        image: "/computer.png",
+        image: "/chat.png",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -50,7 +50,7 @@ const alevel = [
     {
         id: "ZGEO1AAV05",
         title: "Hardware and Virtual Machines",
-        image: "/computer.png",
+        image: "/ml.png",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -65,8 +65,8 @@ const alevel = [
             `Understanding of the four basic computer architectures: SISD, SIMD, MISD, MIMD`,
             `Understanding of the characteristics of massively parallel computers`,
             `Understanding of the concept of a virtual machine`,
-            `How to produce truth tables for logic circuits including half adders and full adders`
-                `Understanding of a flip-flop (SR, JK)`,
+            `How to produce truth tables for logic circuits including half adders and full adders`,
+            `Understanding of a flip-flop (SR, JK)`,
             `Understanding of Boolean algebra`,
             `Understanding of Karnaugh maps (K-map) `
         ]
@@ -74,7 +74,7 @@ const alevel = [
     {
         id: "PPUCZNT5S4",
         title: "System Software",
-        image: "/computer.png",
+        image: "/devops.png",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -97,7 +97,7 @@ const alevel = [
     {
         id: "FQHHUBJVZ9",
         title: "Security",
-        image: "/computer.png",
+        image: "/security.svg",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -124,7 +124,7 @@ const alevel = [
     {
         id: "XR4FGGS0VI",
         title: "Artificial Intelligence",
-        image: "/computer.png",
+        image: "/ai.png",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -168,7 +168,7 @@ const alevel = [
     {
         id: "WXWBYVYR9X",
         title: "Further Programming",
-        image: "/computer.png",
+        image: "/program.svg",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
