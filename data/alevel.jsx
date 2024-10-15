@@ -1,3 +1,5 @@
+import { content } from "./content"
+
 const alevel = [
     {
         id: 1,
@@ -91,6 +93,99 @@ const alevel = [
             `How the grammar of a language can be expressed using syntax diagrams or Backus-Naur Form (BNF) notation`,
             `How Reverse Polish Notation (RPN) can be used to carry out the evaluation of expressions`
         ]
+    },
+    {
+        id: 5,
+        title: "Security",
+        image: "/computer.png",
+        duration: "6 weeks",
+        method: "Self-paced",
+        level: "Beginner",
+        tags: ["A level"],
+        content: [
+            "Encryption",
+            "Encryption Protocols",
+            "Digital Certificates",
+        ],
+        what_you_will_learn: [
+            `How encryption works and what it is used for`,
+            `The use of public key, private key, plain text, cipher text, encryption, symmetric key cryptography and asymmetric key cryptography`,
+            `How the keys can be used to send a private message from the public to an individual/organisation`,
+            `How the keys can be used to send a verified message to the public`,
+            `How data is encrypted and decrypted, using symmetric and asymmetric cryptography`,
+            `Purpose, benefits and drawbacks of quantum cryptography`,
+            `The Secure Socket Layer (SSL)/Transport Layer Security (TLS)`,
+            `Purpose of SSL/TLS`,
+            `Use of SSL/TLS in client-server communication`,
+            `Understanding of digital certificates`,
+            `How a digital certificate is used to produce digital signatures`,
+        ]
+    },
+    {
+        id: 6,
+        title: "Artificial Intelligence",
+        image: "/computer.png",
+        duration: "6 weeks",
+        method: "Self-paced",
+        level: "Beginner",
+        tags: ["A level"],
+        content: [
+            "Artificial Intelligence (AI)",
+            "Machine Learning",
+        ],
+        what_you_will_learn: [
+            `How graphs can be used to aid Artificial Intelligence (AI)`,
+            `Purpose and structure of a graph`,
+            `Use A* and Djikstra's algorithm to perform searches on a graph`,
+            `How artificial neural networks have helped with machine learning`,
+            `Machine learning categories: supervised and unsupervised learning`,
+            `Deep Learning, Machine Learning and Reinforcement Learning and the reasons for using these methods`,
+            `Back propagation of errors and regression methods in machine learning`,
+        ],
+    },
+    {
+        id: 7,
+        title: "Computational thinking and Problem-solving",
+        image: "/computer.png",
+        duration: "6 weeks",
+        method: "Self-paced",
+        level: "Beginner",
+        tags: ["A level"],
+        content: [
+            "Algorithms",
+            "Recursion",
+        ],
+        what_you_will_learn: [
+            `Linear and binary searching methods`,
+            `Insertion sort and bubble sort methods`,
+            `Use of Abstract Data Types`,
+            `Implementation of ADTs from another ADT`,
+            `Recursion`,
+            `Stacks and Queues`,
+            `Time, Space and Complexity`,
+        ]
+    },
+    {
+        id: 8,
+        title: "Further Programming",
+        image: "/computer.png",
+        duration: "6 weeks",
+        method: "Self-paced",
+        level: "Beginner",
+        tags: ["A level"],
+        content: [
+            "Programming Paradigms",
+            "File Processing and Exception Handling",
+        ],
+        what_you_will_learn: [
+            `Introduction to programming paradigms`,
+            `Low-level Programming`,
+            `Imperative (Procedural) programming`,
+            `Object-Oriented Programming (OOP)`,
+            `Declarative programming`,
+            `FIle processing and exception handling: read, write, append, close`,
+        ]
+        
     }
 ]
 
