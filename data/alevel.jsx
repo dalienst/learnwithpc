@@ -2,7 +2,7 @@ import { content } from "./content"
 
 const alevel = [
     {
-        id: 1,
+        id: "MCEOWZI37V",
         title: "Data Representation",
         image: "/computer.png",
         duration: "6 weeks",
@@ -27,7 +27,7 @@ const alevel = [
         ]
     },
     {
-        id: 2,
+        id: "MRTRFJLPKL",
         title: "Communication and internet technologies",
         image: "/computer.png",
         duration: "6 weeks",
@@ -48,7 +48,7 @@ const alevel = [
         ]
     },
     {
-        id: 3,
+        id: "ZGEO1AAV05",
         title: "Hardware and Virtual Machines",
         image: "/computer.png",
         duration: "6 weeks",
@@ -72,7 +72,7 @@ const alevel = [
         ]
     },
     {
-        id: 4,
+        id: "PPUCZNT5S4",
         title: "System Software",
         image: "/computer.png",
         duration: "6 weeks",
@@ -95,7 +95,7 @@ const alevel = [
         ]
     },
     {
-        id: 5,
+        id: "FQHHUBJVZ9",
         title: "Security",
         image: "/computer.png",
         duration: "6 weeks",
@@ -122,7 +122,7 @@ const alevel = [
         ]
     },
     {
-        id: 6,
+        id: "XR4FGGS0VI",
         title: "Artificial Intelligence",
         image: "/computer.png",
         duration: "6 weeks",
@@ -144,7 +144,7 @@ const alevel = [
         ],
     },
     {
-        id: 7,
+        id: "UXNPHLGAN3",
         title: "Computational thinking and Problem-solving",
         image: "/computer.png",
         duration: "6 weeks",
@@ -166,7 +166,7 @@ const alevel = [
         ]
     },
     {
-        id: 8,
+        id: "WXWBYVYR9X",
         title: "Further Programming",
         image: "/computer.png",
         duration: "6 weeks",
