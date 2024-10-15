@@ -6,7 +6,7 @@ const courses = [
         duration: "6 weeks",
         method: "Self-paced",
         level: "Beginner",
-        tags: ["AS level"],
+        tags: ["AS level", "Data", "Information Representation"],
         content: [
             "Number systems, binary, hexadecimal, decimal, and more.",
             "Text, sound and images",
@@ -36,7 +36,7 @@ const courses = [
         duration: "6 weeks",
         method: "Self-paced",
         level: "Beginner",
-        tags: ["AS level"],
+        tags: ["AS level", "Networks", "Security"],
         content: [
             "Types and methods of data transmission",
             "Methods of error detection",
@@ -63,7 +63,7 @@ const courses = [
         duration: "6 weeks",
         method: "Self-paced",
         level: "Beginner",
-        tags: ["AS level"],
+        tags: ["AS level", "Hardware"],
         content: [
             "Computer architecture, microprocessors, and memory",
             "Input and output devices",
@@ -105,7 +105,7 @@ const courses = [
         duration: "6 weeks",
         method: "Self-paced",
         level: "Beginner",
-        tags: ["AS level"],
+        tags: ["AS level", "Software"],
         content: [
             "Types of software and interrupts",
             "Types of programming language, translators and integrated development environments (IDEs)",
@@ -129,7 +129,7 @@ const courses = [
         duration: "6 weeks",
         method: "Self-paced",
         level: "Beginner",
-        tags: ["AS level"],
+        tags: ["AS level", "Internet", "Cyber security", "Blockchain"],
         content: [
             "The internet and the world wide web",
             "Digital Currency",
@@ -154,8 +154,8 @@ const courses = [
         image: "/computer.png",
         duration: "6 weeks",
         method: "Self-paced",
-        level: "Beginner",
-        tags: ["AS level"],
+        level: "Intermediate",
+        tags: ["AS level", "Automated systems", "Robotics", "Artificial Intelligence"],
         content: [
             "Automated systems",
             "Robotics",
@@ -179,7 +179,7 @@ const courses = [
         duration: "6 weeks",
         method: "Self-paced",
         level: "Beginner",
-        tags: ["AS level"],
+        tags: ["AS level", "Networks", "Security", "Internet"],
         content: [
             `Networks including the internet`,
             `The internet and the world wide web`,
@@ -204,7 +204,7 @@ const courses = [
         image: "/computer.png",
         duration: "6 weeks",
         method: "Self-paced",
-        level: "Beginner",
+        level: "Advanced",
         tags: ["AS level"],
         content: [
             `Central Processing Unit (CPU) Architecture`,
@@ -257,7 +257,7 @@ const courses = [
         duration: "6 weeks",
         method: "Self-paced",
         level: "Beginner",
-        tags: ["AS level"],
+        tags: ["AS level", "Security"],
         content: [
             "Data Security",
             "Data Integrity",
@@ -301,7 +301,7 @@ const courses = [
         duration: "6 weeks",
         method: "Self-paced",
         level: "Beginner",
-        tags: ["AS level"],
+        tags: ["AS level", "Databases"],
         content: [
             `Database Concepts`,
             `Database Management Systems (DBMS)`,
@@ -374,7 +374,7 @@ const courses = [
         image: "/computer.png",
         duration: "6 weeks",
         method: "Self-paced",
-        level: "Beginner",
+        level: "Intermediate",
         tags: ["AS level"],
         content: [
             "Program Development Life Cycle",

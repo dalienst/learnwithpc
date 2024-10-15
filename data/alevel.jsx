@@ -7,8 +7,8 @@ const alevel = [
         image: "/computer.png",
         duration: "6 weeks",
         method: "Self-paced",
-        level: "Beginner",
-        tags: ["A level"],
+        level: "A level",
+        tags: ["A level", "Data"],
         content: [
             `User defined data types`,
             `File organisation and access`,
@@ -32,8 +32,8 @@ const alevel = [
         image: "/computer.png",
         duration: "6 weeks",
         method: "Self-paced",
-        level: "Beginner",
-        tags: ["A level"],
+        level: "A level",
+        tags: ["A level", "Communication", "Internet", "Networks"],
         content: [
             "Protocols",
             "Circuit switching, packet switching",
@@ -53,8 +53,8 @@ const alevel = [
         image: "/computer.png",
         duration: "6 weeks",
         method: "Self-paced",
-        level: "Beginner",
-        tags: ["A level"],
+        level: "A level",
+        tags: ["A level", "Hardware", "Virtual Machines"],
         content: [
             "Processors, Parallel Processing and Virtual Machines",
             "Boolean Algebra and Logic Circuits",
@@ -77,8 +77,8 @@ const alevel = [
         image: "/computer.png",
         duration: "6 weeks",
         method: "Self-paced",
-        level: "Beginner",
-        tags: ["A level"],
+        level: "A level",
+        tags: ["A level", "Operating Systems", "Systems"],
         content: [
             "Purposes of an Operating System (OS)",
             "Translation Software",
@@ -100,8 +100,8 @@ const alevel = [
         image: "/computer.png",
         duration: "6 weeks",
         method: "Self-paced",
-        level: "Beginner",
-        tags: ["A level"],
+        level: "A level",
+        tags: ["A level", "Security"],
         content: [
             "Encryption",
             "Encryption Protocols",
@@ -127,8 +127,8 @@ const alevel = [
         image: "/computer.png",
         duration: "6 weeks",
         method: "Self-paced",
-        level: "Beginner",
-        tags: ["A level"],
+        level: "A level",
+        tags: ["A level", "AI", "ML", "Artificial Intelligence", "Machine Learning"],
         content: [
             "Artificial Intelligence (AI)",
             "Machine Learning",
@@ -149,8 +149,8 @@ const alevel = [
         image: "/computer.png",
         duration: "6 weeks",
         method: "Self-paced",
-        level: "Beginner",
-        tags: ["A level"],
+        level: "A level",
+        tags: ["A level", "Computational thinking", "Problem-solving"],
         content: [
             "Algorithms",
             "Recursion",
@@ -171,8 +171,8 @@ const alevel = [
         image: "/computer.png",
         duration: "6 weeks",
         method: "Self-paced",
-        level: "Beginner",
-        tags: ["A level"],
+        level: "A level",
+        tags: ["A level", "Programming"],
         content: [
             "Programming Paradigms",
             "File Processing and Exception Handling",
@@ -185,7 +185,7 @@ const alevel = [
             `Declarative programming`,
             `FIle processing and exception handling: read, write, append, close`,
         ]
-        
+
     }
 ]
 
