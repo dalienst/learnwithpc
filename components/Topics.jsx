@@ -11,7 +11,7 @@ function Topics() {
                 {topics?.map((topic) => (
                     <div key={topic.topic} className="flex flex-col items-center mx-2 mb-6 bg-white shadow border rounded p-4 w-36 h-36 flex-grow justify-center"> {/* Card with fixed width and height */}
                         <Image src={topic.image} alt={topic.topic} width={90} height={90} className="mb-2" />
-                        <h6 className="text-center">{topic.topic}</h6>
+                        <h6 className="text-center font-sans">{topic.topic}</h6>
                     </div>
                 ))}
             </div>
