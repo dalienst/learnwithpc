@@ -5,7 +5,7 @@ import React from 'react'
 
 function Topics() {
     return (
-        <div className="container mx-auto mt-3 py-9 px-9">
+        <div className="container mx-auto mt-3 py-9 px-4">
             <h2 className="font-playfair text-center text-4xl font-bold">Featured Topics</h2>
             <div className="flex flex-wrap justify-center mt-4"> {/* Center the topics */}
                 {topics?.map((topic) => (
