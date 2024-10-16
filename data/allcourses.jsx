@@ -2,7 +2,7 @@ const allcourses = [
     {
         id: "MCEOWZI37V",
         title: "Data Representation",
-        image: "/computer.png",
+        image: "/data.svg",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -27,7 +27,7 @@ const allcourses = [
     {
         id: "MRTRFJLPKL",
         title: "Communication and internet technologies",
-        image: "/computer.png",
+        image: "/chat.png",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -48,7 +48,7 @@ const allcourses = [
     {
         id: "ZGEO1AAV05",
         title: "Hardware and Virtual Machines",
-        image: "/computer.png",
+        image: "/ml.png",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -63,8 +63,8 @@ const allcourses = [
             `Understanding of the four basic computer architectures: SISD, SIMD, MISD, MIMD`,
             `Understanding of the characteristics of massively parallel computers`,
             `Understanding of the concept of a virtual machine`,
-            `How to produce truth tables for logic circuits including half adders and full adders`
-                `Understanding of a flip-flop (SR, JK)`,
+            `How to produce truth tables for logic circuits including half adders and full adders`,
+            `Understanding of a flip-flop (SR, JK)`,
             `Understanding of Boolean algebra`,
             `Understanding of Karnaugh maps (K-map) `
         ]
@@ -72,7 +72,7 @@ const allcourses = [
     {
         id: "PPUCZNT5S4",
         title: "System Software",
-        image: "/computer.png",
+        image: "/devops.png",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -95,7 +95,7 @@ const allcourses = [
     {
         id: "FQHHUBJVZ9",
         title: "Security",
-        image: "/computer.png",
+        image: "/system.svg",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -122,7 +122,7 @@ const allcourses = [
     {
         id: "XR4FGGS0VI",
         title: "Artificial Intelligence",
-        image: "/computer.png",
+        image: "/ai.svg",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -144,7 +144,7 @@ const allcourses = [
     {
         id: "UXNPHLGAN3",
         title: "Computational thinking and Problem-solving",
-        image: "/computer.png",
+        image: "/compute.svg",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -166,7 +166,7 @@ const allcourses = [
     {
         id: "WXWBYVYR9X",
         title: "Further Programming",
-        image: "/computer.png",
+        image: "/web.svg",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
