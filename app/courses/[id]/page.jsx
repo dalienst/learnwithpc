@@ -33,7 +33,7 @@ function CourseDetail({ params: { id } }) {
                         </div>
 
                         <div className="mb-4">
-                            <h5 className="text-3xl font-semibold">What you'll learn</h5>
+                            <h5 className="text-3xl font-semibold">What you&#39;ll learn</h5>
                             <ol className="list-decimal list-inside px-4">
                                 {course?.what_you_will_learn?.map((item) => (
                                     <li key={item} className="mb-1">{item}</li>
