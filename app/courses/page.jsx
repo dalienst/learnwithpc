@@ -13,7 +13,7 @@ function Courses() {
       <main className="container mx-auto mb-3 px-4 py-3 max-w-screen-xl">
         <div className="flex flex-wrap justify-center">
           {allcourses?.map((course) => (
-            <Link href="#" key={course.id} className="bg-white shadow border m-4 mx-2 p-4 flex flex-col items-center w-60 hover:shadow-lg transition-shadow duration-200 max-sm:w-full max-sm:mx-8"> {/* Card styling */}
+            <Link href={`/courses/${course.id}`} key={course.id} className="bg-white shadow border m-4 mx-2 p-4 flex flex-col items-center w-60 hover:shadow-lg transition-shadow duration-200 max-sm:w-full max-sm:mx-8"> {/* Card styling */}
               <section className='w-full mb-3' style={{ height: '200px' }}>
                 <Image
                   src={course.image}
