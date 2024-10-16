@@ -5,11 +5,11 @@ import { FaSquareFacebook, FaXTwitter, FaLinkedin } from "react-icons/fa6";
 
 function Footer() {
     return (
-        <footer className="bg-foreground text-white py-8">
+        <footer className="bg-navy text-white py-3">
             <div className="container mx-auto px-4 text-center">
                 <h6 className="font-playfair text-2xl font-semibold mb-2">Learn with Mr. PC</h6>
                 <p className="text-sm mb-6">Elevate your skills, one lesson at a time.</p>
-                <div className="flex justify-center space-x-6 mb-4">
+                <div className="flex justify-center space-x-2 mb-4">
                     {/* Replace '#' with actual links */}
                     <Link href="#" className="hover:text-cream">
                         <FaSquareFacebook />

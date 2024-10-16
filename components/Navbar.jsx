@@ -11,7 +11,7 @@ function Navbar() {
     return (
         <nav className="bg-white shadow py-4 sticky top-0">
             <div className="container-fluid px-3 mx-auto flex justify-between items-center">
-                <Link href="/" className="font-bold text-2xl ">
+                <Link href="/" className="font-bold text-2xl font-playfair">
                     Learn with PC
                 </Link>
 
@@ -32,13 +32,8 @@ function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="#" className=" hover:text-gray-300">
+                        <Link href="/courses" className=" hover:text-gray-300">
                             Courses
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="#" className=" hover:text-gray-300">
-                            About
                         </Link>
                     </li>
                 </ul>
