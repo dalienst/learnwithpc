@@ -97,7 +97,7 @@ const alevel = [
     {
         id: "FQHHUBJVZ9",
         title: "Security",
-        image: "/security.svg",
+        image: "/system.svg",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -124,7 +124,7 @@ const alevel = [
     {
         id: "XR4FGGS0VI",
         title: "Artificial Intelligence",
-        image: "/ai.png",
+        image: "/ai.svg",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -146,7 +146,7 @@ const alevel = [
     {
         id: "UXNPHLGAN3",
         title: "Computational thinking and Problem-solving",
-        image: "/computer.png",
+        image: "/compute.svg",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
@@ -168,7 +168,7 @@ const alevel = [
     {
         id: "WXWBYVYR9X",
         title: "Further Programming",
-        image: "/program.svg",
+        image: "/web.svg",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
