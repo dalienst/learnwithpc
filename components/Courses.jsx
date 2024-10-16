@@ -11,13 +11,13 @@ function FeaturedCourses() {
             <div className="flex flex-wrap justify-center mt-4">
                 {alevel.map((course) => (
                     <div key={course.id} className="bg-white shadow border m-4 mx-2 p-4 flex flex-col items-center w-60 hover:shadow-lg transition-shadow duration-200"> {/* Card styling */}
-                        <div className='w-full mb-3'>
+                        <div className='w-full mb-3' style={{ height: '200px' }}>
                             <Image
                                 src={course.image}
                                 alt={course.title}
                                 width={200}
                                 height={200}
-                                className="mb-4 object-contain" // Center the image
+                                className="mb-4 object-contain w-full h-full"
                             />
                         </div>
                         <div className="text-start w-full mb-2">
