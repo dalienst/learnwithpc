@@ -97,7 +97,7 @@ const alevel = [
     {
         id: "FQHHUBJVZ9",
         title: "Security",
-        image: "/system.svg",
+        image: "/vault.svg",
         duration: "6 weeks",
         method: "Self-paced",
         level: "A level",
