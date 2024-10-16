@@ -12,7 +12,7 @@ function Hero() {
                     Computer Science modules to get you started on the right path. Curated for all levels: beginner, intermediate and advanced
                 </p>
                 <div className="flex justify-center mt-4">
-                    <Link href="/courses" className="bg-white hover:bg-black hover:text-white text-foreground font-bold rounded py-2 px-4">
+                    <Link href="/courses" className="bg-white hover:bg-navy hover:text-white text-foreground font-bold rounded py-2 px-4">
                         Explore Courses
                     </Link>
                 </div>
