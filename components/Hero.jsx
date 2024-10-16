@@ -3,7 +3,7 @@ import React from 'react';
 
 function Hero() {
     return (
-        <div className="m-auto flex justify-center bg-ginger py-24">
+        <div className="m-auto flex justify-center bg-foreground py-24">
             <div className="container">
                 <h1 className="font-bold font-playfair text-cream font-display text-4xl mb-3 text-center">
                     Elevate your programming skills to the next level
