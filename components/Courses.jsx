@@ -3,6 +3,7 @@ import { alevel } from '@/data/alevel'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
+import { FaClipboard, FaClipboardCheck, FaClock } from 'react-icons/fa6';
 
 function FeaturedCourses() {
     return (
@@ -22,18 +23,16 @@ function FeaturedCourses() {
                         </section>
                         <div className="text-start w-full mb-2">
                             <h6 className="font-sans mb-2 font-semibold">{course.title}</h6>
-                            <p className="text-sm">{course.duration}</p>
-                            <p className="text-sm">{course.level}</p>
-                            <p className="text-sm">{course.method}</p>
-
-
-                            {/* <div className="flex flex-wrap gap-2 mt-2"> 
-                                {course.tags.map((tag) => (
-                                    <span key={tag} className="bg-ginger text-white text-xs px-2 py-1 rounded-full hover:bg-ginger/90">
-                                        {tag}
-                                    </span>
-                                ))}
-                            </div> */}
+                            <div className="flex justify-between mb-2">
+                                <div className="flex items-center space-x-2">
+                                    <FaClock className='text-navy' />
+                                    <p className="text-sm">{course.duration}</p>
+                                </div>
+                                <div className="flex items-center space-x-2">
+                                    <FaClipboard className='text-navy' />
+                                    <p className="text-sm">{course.level}</p>
+                                </div>
+                            </div>
                         </div>
                     </Link>
                 ))}
