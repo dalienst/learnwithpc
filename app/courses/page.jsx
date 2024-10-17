@@ -3,10 +3,16 @@ import Hero from '@/components/courses/Hero';
 import { allcourses } from '@/data/allcourses';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import { FaClipboard, FaClock } from 'react-icons/fa6';
 
 function Courses() {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  // Filter courses based on search query
+  const filteredCourses = allcourses.filter((course) =>
+    course.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
   return (
     <>
       <main className="container mx-auto mb-3 px-4 py-3 max-w-screen-xl">
@@ -21,6 +27,8 @@ function Courses() {
                 id="search"
                 className="border px-4 py-2 w-full sm:w-auto rounded-md"
                 placeholder="Search courses..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)} // Update search query on input change
               />
             </form>
           </div>
@@ -28,7 +36,7 @@ function Courses() {
 
         {/* Course Cards */}
         <div className="flex flex-wrap justify-center">
-          {allcourses?.map((course) => (
+          {filteredCourses?.map((course) => (
             <Link href={`/courses/${course.id}`} key={course.id} className="bg-white shadow border rounded-lg m-4 mx-2 p-6 flex flex-col items-center w-60 hover:shadow-lg hover:scale-105 transform transition-all duration-300 max-sm:w-full max-sm:mx-8">
               <section className='w-full mb-4' style={{ height: '200px' }}>
                 <Image
