@@ -3,12 +3,12 @@ import React from 'react';
 
 function Hero() {
     return (
-        <div className="m-auto flex justify-center bg-navy py-24">
+        <div className="flex justify-center bg-navy py-24 rounded-lg m-2 shadow">
             <div className="container">
-                <h1 className="font-bold font-playfair text-white font-display text-4xl mb-3 text-center">
+                <h1 className="font-bold font-poppins text-white font-display text-4xl mb-3 text-center">
                     Elevate your programming skills to the next level
                 </h1>
-                <p className="text-white text-center font-lato">
+                <p className="text-white text-center font-poppins">
                     Computer Science modules to get you started on the right path. Curated for all levels: beginner, intermediate and advanced
                 </p>
                 <div className="flex justify-center mt-4">

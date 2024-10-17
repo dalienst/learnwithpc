@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         lato: ["Lato", "sans-serif"],
         playfair: ["Playfair Display", "serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       colors: {
         background: "var(--background)",
