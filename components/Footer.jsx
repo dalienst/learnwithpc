@@ -1,15 +1,14 @@
 "use client";
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 import { FaSquareFacebook, FaXTwitter, FaLinkedin } from "react-icons/fa6";
 
 function Footer() {
     return (
-        <footer className="bg-navy text-white py-3">
-            <div className="container mx-auto px-4 text-center">
-                <h6 className="font-playfair text-2xl font-semibold mb-2">Learn with Mr. PC</h6>
-                <p className="text-sm mb-6">Elevate your skills, one lesson at a time.</p>
-                <div className="flex justify-center space-x-2 mb-4">
+        <footer className="border-t mb-0">
+            <div className="flex flex-col sm:flex-row justify-between items-center px-2 py-2 space-y-4 sm:space-y-0">
+                <h6 className="font-poppins text-sm mb-2 sm:mb-0">Learn with Mr. PC</h6>
+                <div className="flex justify-center space-x-2">
                     {/* Replace '#' with actual links */}
                     <Link href="#" className="hover:text-cream">
                         <FaSquareFacebook />
@@ -21,10 +20,9 @@ function Footer() {
                         <FaXTwitter />
                     </Link>
                 </div>
-                <p className="text-xs text-gray-400">© 2024 Learn with Mr. PC. All rights reserved.</p>
             </div>
         </footer>
-    )
+    );
 }
 
 export default Footer;
