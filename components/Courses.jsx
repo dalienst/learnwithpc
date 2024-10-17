@@ -3,7 +3,7 @@ import { alevel } from '@/data/alevel'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link';
-import { FaClipboard, FaClipboardCheck, FaClock } from 'react-icons/fa6';
+import { FaClipboard, FaClock } from 'react-icons/fa6';
 
 function FeaturedCourses() {
     return (
@@ -26,11 +26,11 @@ function FeaturedCourses() {
                             <div className="flex justify-between items-center mb-2">
                                 <div className="flex items-center space-x-2">
                                     <FaClock className='text-navy' />
-                                    <p className="text-base">{course.duration}</p> {/* Text size bumped to base */}
+                                    <p className="text-base">{course.duration}</p>
                                 </div>
                                 <div className="flex items-center space-x-2">
                                     <FaClipboard className='text-navy' />
-                                    <p className="text-base">{course.level}</p> {/* Text size bumped to base */}
+                                    <p className="text-base">{course.level}</p>
                                 </div>
                             </div>
                         </div>
