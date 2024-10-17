@@ -21,7 +21,7 @@ function CourseDetail({ params: { id } }) {
         <>
             <CourseDetailHero course={course} />
             <main className="container mx-auto mb-3 px-4 py-3 max-w-screen-xl">
-                <section className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-3">
+                <section className="grid grid-cols-1 md:grid-cols-3 gap-4 md:mt-3">
                     <div className='col-span-2'>
                         <div className="p-6">
                             <h5 className="text-2xl font-semibold mb-4">Content in this course</h5>
@@ -42,7 +42,7 @@ function CourseDetail({ params: { id } }) {
                         </div>
                     </div>
 
-                    <div className='px-12'>
+                    <div className='md:px-12 w-100'>
                         <div className="mb-4 p-4 bg-navy rounded shadow text-white">
                             <h5 className="text-2xl font-semibold mb-4">Book this course</h5>
                             <Formik
