@@ -19,18 +19,11 @@ function CourseDetail({ params: { id } }) {
 
     return (
         <>
+            <CourseDetailHero course={course} />
             <main className="container mx-auto mb-3 px-4 py-3 max-w-screen-xl">
-                <section className=' py-6 px-2'>
-                    <h1 className='font-bold font-poppins font-display text-4xl mb-3'>{course?.title}</h1>
-                    <div className="flex justify-start gap-2 flex-wrap">
-                        <p className='text-white text-base rounded-full bg-navy px-4 hover:bg-navy/90 py-1'>{course?.duration}</p>
-                        <p className='text-white text-base rounded-full bg-navy px-4 hover:bg-navy/90 py-1'>{course?.level}</p>
-                        <p className='text-white text-base rounded-full bg-navy px-4 hover:bg-navy/90 py-1'>{course?.method}</p>
-                    </div>
-                </section>
-                <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
-                    <div className="space-y-6">
-                        <div className=" p-6">
+                <section className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-3">
+                    <div className='col-span-2'>
+                        <div className="p-6">
                             <h5 className="text-2xl font-semibold mb-4">Content in this course</h5>
                             <ul className="list-disc list-inside px-4 space-y-2">
                                 {course?.content?.map((item) => (
@@ -49,9 +42,9 @@ function CourseDetail({ params: { id } }) {
                         </div>
                     </div>
 
-                    {/* <div className='px-12'>
-                        <div className="mb-4 p-4 bg-gray-100 rounded shadow">
-                            <h5 className="text-3xl font-semibold mb-4">Book this course</h5>
+                    <div className='px-12'>
+                        <div className="mb-4 p-4 bg-navy rounded shadow text-white">
+                            <h5 className="text-2xl font-semibold mb-4">Book this course</h5>
                             <Formik
                                 initialValues={{ name: '', email: '', phone: '' }}
                                 validationSchema={validationSchema}
@@ -93,7 +86,7 @@ function CourseDetail({ params: { id } }) {
 
                                         <button
                                             type="submit"
-                                            className="w-full bg-navy text-white font-semibold py-2 px-4 rounded hover:bg-navy/90"
+                                            className="bg-white text-navy hover:bg-navy hover:border hover:border-white hover:text-white font-bold rounded py-2 px-4"
                                         >
                                             Submit
                                         </button>
@@ -101,7 +94,7 @@ function CourseDetail({ params: { id } }) {
                                 )}
                             </Formik>
                         </div>
-                    </div> */}
+                    </div>
                 </section>
             </main>
         </>
