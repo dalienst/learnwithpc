@@ -10,9 +10,9 @@ function Navbar() {
     };
 
     return (
-        <nav className="bg-white shadow py-4 sticky top-2 rounded-lg m-2">
+        <nav className="bg-white shadow py-4 rounded-lg m-2">
             <div className="container-fluid px-3 mx-auto flex justify-between items-center">
-                <Link href="/" className="font-bold text-2xl font-playfair">
+                <Link href="/">
                     <Image src="/logo.svg" alt="logo" width={200} height={200} />
                 </Link>
 

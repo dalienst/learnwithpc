@@ -7,10 +7,10 @@ import Link from 'next/link';
 function FeaturedCourses() {
     return (
         <div className="container mx-auto mb-3 px-4 py-3 max-w-screen-xl">
-            <h2 className="font-lato text-center text-3xl font-bold">A-Level Courses</h2>
+            <h2 className="font-poppins mt-10 mb-10 text-center text-3xl font-bold">A-Level Courses</h2>
             <div className="flex flex-wrap justify-center">
                 {alevel.map((course) => (
-                    <Link href={`/courses/${course.id}`} key={course.id} className="bg-white shadow border m-4 mx-2 p-4 flex flex-col items-center w-60 hover:shadow-lg transition-shadow duration-200 max-sm:w-full max-sm:mx-8"> {/* Card styling */}
+                    <Link href={`/courses/${course.id}`} key={course.id} className="bg-white shadow border rounded-lg  m-4 mx-2 p-4 flex flex-col items-center w-60 hover:shadow-lg transition-shadow duration-200 max-sm:w-full max-sm:mx-8"> {/* Card styling */}
                         <section className='w-full mb-3' style={{ height: '200px' }}>
                             <Image
                                 src={course.image}
@@ -38,8 +38,8 @@ function FeaturedCourses() {
                     </Link>
                 ))}
             </div>
-            <div className="flex justify-center mt-6">
-                <Link href="/courses" className="text-center bg-navy text-white rounded px-4 py-2 hover:bg-white hover:text-olive hover:border hover:border-b font-bold">
+            <div className="flex justify-center mt-6 mb-6">
+                <Link href="/courses" className="text-center bg-navy text-white rounded-lg px-4 py-2 hover:bg-navy/90 hover:border hover:border-b font-bold">
                     All Courses
                 </Link>
             </div>
