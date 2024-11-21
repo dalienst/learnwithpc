@@ -28,6 +28,21 @@ const courses = [
             `Understand the purpose of and need for data compression`,
             `Understand how files are compressed using lossy and lossless compression methods`,
         ],
+        keySkills : [
+            "Binary Number System",
+            "Denary, Binary, and Hexadecimal Systems",
+            "Hexadecimal Data Representation",
+            "Binary Overflow",
+            "Binary Shifts",
+            "Two's Complement",
+            "Character Encoding (ASCII, Unicode)",
+            "Sound Representation",
+            "Image Representation",
+            "Data Storage Measurement",
+            "File Size Calculation",
+            "Data Compression",
+            "Lossy and Lossless Compression"
+          ]
     },
     {
         id: "UNJT9ZQJKO",
@@ -54,7 +69,21 @@ const courses = [
             `Describe how an automatic repeat query (ARQ) can be used to establish that data is received without error`,
             `Understand the need for and purpose of encryption when transmitting data`,
             `Understand how data is encrypted using symmetric and asymetric encryption`,
-        ]
+        ],
+        keySkills : [
+            "Packet Switching",
+            "Data Transmission Methods",
+            "USB Interface and Data Transfer",
+            "Error Detection Techniques",
+            "Parity Check",
+            "Checksum",
+            "Echo Check",
+            "Check Digit Validation",
+            "ARQ Protocol",
+            "Encryption Techniques",
+            "Symmetric Encryption",
+            "Asymmetric Encryption"
+          ]
     },
     {
         id: "2CBY0PAXSN",
@@ -96,7 +125,26 @@ const courses = [
             `The purpose of an internet protocol (IP) address`,
             `The role of a router in a network`,
             `The functions of NOT, AND, OR, NAND, NOR and XOR (EOR) gates`
-        ]
+        ],
+        keySkills :[
+            "Memory Components",
+            "CPU Architecture",
+            "Fetch-Decode-Execute Cycle",
+            "CPU Performance Factors",
+            "Instruction Set",
+            "Embedded Systems",
+            "Input/Output Devices",
+            "Sensors and Data Capture",
+            "Primary and Secondary Storage",
+            "Storage Technologies",
+            "Virtual Memory",
+            "Cloud Storage",
+            "Network Interface Cards",
+            "MAC Addresses",
+            "IP Addresses",
+            "Routers",
+            "Logic Gates",
+          ]
     },
     {
         id: "C32NY1VMNG",
@@ -120,7 +168,17 @@ const courses = [
             `The operation of a compiler and an interpreter including how high-level language is translated`,
             `The advantages and disadvantages of a compiler and an interpreter`,
             `The role of an IDE in a software development environment`,
-        ]
+        ],
+        keySkills : [
+            "System and Application Software",
+            "Operating System Functions",
+            "Hardware, Firmware, and OS Relationship",
+            "Interrupts",
+            "High-Level and Low-Level Languages",
+            "Assembly Language and Assemblers",
+            "Compilers and Interpreters",
+            "IDE in Software Development"
+          ]
     },
     {
         id: "WUGXQB52NC",
@@ -146,7 +204,19 @@ const courses = [
             `Understand the process of blockchain and how it is used to track digital currency transactions`,
             `The process involved in, and the aim of carrying out, a range of cyber security threats`,
             `How a range of cyber security threats can be prevented`,
-        ]
+        ],
+        keySkills: [
+            "Internet vs. World Wide Web",
+            "URL Structure",
+            "HTTP and HTTPS Protocols",
+            "Web Browser Function",
+            "Web Page Retrieval and Display",
+            "Cookies and Their Use",
+            "Digital Currency",
+            "Blockchain Technology",
+            "Cybersecurity Threats",
+            "Cybersecurity Prevention"
+          ]
     },
     {
         id: "7XAHLKXVOE",
@@ -170,7 +240,16 @@ const courses = [
             `What is meant by artificial intelligence (AI)`,
             `The main characteristics of AI as the collection of data and the rules for using that data, ability to reason, ability to learn and adapt`,
             `The basic operation and components of AI systems to simulate intelligent behaviour`,
-        ]
+        ],
+        keySkills : [
+            "Sensor-Microprocessor-Actuator Systems",
+            "Automated System Advantages and Disadvantages",
+            "Robotics",
+            "Robot Characteristics and Roles",
+            "AI",
+            "AI Characteristics and Operation",
+            "AI System Components"
+          ]
     },
     {
         id: "LZVGLEF2W5",

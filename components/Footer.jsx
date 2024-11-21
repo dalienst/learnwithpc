@@ -5,9 +5,8 @@ import { FaSquareFacebook, FaXTwitter, FaLinkedin } from "react-icons/fa6";
 
 function Footer() {
     return (
-        <footer className="border-t mb-0">
-            <div className="flex flex-col sm:flex-row justify-between items-center px-2 py-2 space-y-4 sm:space-y-0">
-                <h6 className="font-poppins text-sm mb-2 sm:mb-0">Learn with Mr. PC</h6>
+        <footer className="flex flex-col sm:flex-row justify-between items-center px-5 space-y-4 sm:space-y-0 bg-navy text-white py-5 mb-0">
+                <h1 className="font-poppins text-sm mb-2 sm:mb-0">Learn with Mr. PC</h1>
                 <div className="flex justify-center space-x-2">
                     {/* Replace '#' with actual links */}
                     <Link href="#" className="hover:text-cream">
@@ -20,7 +19,6 @@ function Footer() {
                         <FaXTwitter />
                     </Link>
                 </div>
-            </div>
         </footer>
     );
 }
