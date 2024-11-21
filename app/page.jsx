@@ -40,9 +40,9 @@ function page() {
                         <Image src='/office3.jpg' alt="home" width={0} height={0} sizes="100vw" objectFit="cover" className="h-auto w-full rounded-lg" />
                     </div>
                 </div>
-                <p className="font-semibold text-2xl">Study at the comfort <br /> of your home</p>
+                <p className="font-semibold text-2xl">Study at the comfort <br className="hidden lg:block" /> of your home</p>
             </div>
-            <div className="bg-slate-100 h-full rounded-xl p-2 flex flex-col gap-10 md:gap-0 justify-between">
+            <div className="bg-slate-100 h-full rounded-xl p-2 flex flex-col gap-20 md:gap-0 justify-between">
                 <p className="flex justify-between items-center">
                     <span className="bg-navy px-2 py-1 rounded-full">
                     <Icon icon="mynaui:video" width="1.2rem" height="1.2rem" color="white"/>
@@ -67,7 +67,7 @@ function page() {
                 </div>
             </div>
     </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-5 px-4 lg:px-10 py-10 bg-navy">
+    <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-5 px-4 lg:px-10 py-5 lg:py-10 bg-navy">
         <div className="text-white space-y-2">
             <h1 className="font-bold text-3xl lg:text-4xl">Most Popular Courses</h1>
             <p>Ready to level up your skills? Our most popular courses offer expert-led instruction and hands-on projects to help you succeed.</p>

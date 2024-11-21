@@ -18,12 +18,12 @@ function CourseDetail({ params: { id } }) {
   });
 
   return (
-    <div className="flex flex-col md:flex-row px-10 gap-10">
-      <div className="container flex-[3] mx-auto max-w-screen-xl">
+    <div className="flex flex-col md:flex-row px-4 lg:px-10 gap-10">
+      <div className="flex-[3]">
         <CourseDetailHero course={course} />
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="col-span-2">
-            <div className="p-6">
+        <section className="grid grid-cols-1 mt-3 lg:mt-0 md:grid-cols-3 gap-4">
+          <div className="col-span-2 space-y-3 lg:space-y-0">
+            <div className="lg:p-6">
               <h5 className="text-2xl font-semibold mb-4">
                 Content in this course
               </h5>
@@ -33,8 +33,7 @@ function CourseDetail({ params: { id } }) {
                 ))}
               </ul>
             </div>
-
-            <div className=" p-6">
+            <div className="lg:p-6">
               <h5 className="text-2xl font-semibold mb-4">
                 What you&apos;ll learn
               </h5>
@@ -47,7 +46,7 @@ function CourseDetail({ params: { id } }) {
           </div>
         </section>
       </div>
-      <aside className="flex-1 w-[340px] md:w-auto mb-4">
+      <aside className="flex-1 max-w-[340px] md:w-auto mb-4">
         <div className="p-4 rounded border text-white">
           <h1 className="text-2xl font-semibold mb-4 text-black">Book this course</h1>
           <Formik

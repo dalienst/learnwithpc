@@ -14,8 +14,18 @@ function CourseDetailHero({ course }) {
         //         </div>
         //     </div>
         // </div>
-        <div className="h-[350px]">
+        <div>
+            <div className="lg:h-[350px]">
             <img src="/data-representation-banner.png" alt="course banner" className="h-full w-full rounded-t-xl object-cover object-center" />
+        </div>
+        <div className="mt-3">
+            <h1 className='font-semibold font-display underline text-3xl lg:text-4xl mb-4 lg:text-center'>{course?.title}</h1>
+            <div className="flex justify-center gap-2 flex-wrap">
+                <p className='text-navy bg-[#ededed] text-base rounded-full px-4 py-1'>{course?.duration}</p>
+                <p className='text-navy bg-[#ededed] text-base rounded-full px-4 py-1'>{course?.level}</p>
+                <p className='text-navy bg-[#ededed] text-base rounded-full px-4 py-1'>{course?.method}</p>
+            </div>
+        </div>
         </div>
     )
 }
