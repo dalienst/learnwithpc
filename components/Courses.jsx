@@ -1,6 +1,5 @@
 "use client";
-import { alevel } from '@/data/alevel'
-import React from 'react'
+import { courses } from '@/data/courses'
 import Image from 'next/image'
 import Link from 'next/link';
 import { FaClipboard, FaClock } from 'react-icons/fa6';
@@ -10,8 +9,8 @@ function FeaturedCourses() {
         <div className="container mx-auto mb-3 px-4 py-3 max-w-screen-xl">
             <h2 className="font-poppins mt-10 mb-10 text-center text-3xl font-bold">A-Level Courses</h2>
             <div className="flex flex-wrap justify-center">
-                {alevel.map((course) => (
-                    <Link href={`/courses/${course.id}`} key={course.id} className="bg-white shadow border rounded-lg m-4 mx-2 p-6 flex flex-col items-center w-60 hover:shadow-lg hover:scale-105 transform transition-all duration-300 max-sm:w-full max-sm:mx-8">
+                {courses.map((course) => (
+                    <Link href={`/courses/${course.id}`} key={course.id} className="bg-white shadow border rounded-lg m-4 mx-2 p-6 flex flex-col justify-between items-center w-60 hover:shadow-lg hover:scale-105 transform transition-all duration-300 max-sm:w-full max-sm:mx-8">
                         <section className='w-full mb-4' style={{ height: '200px' }}>
                             <Image
                                 src={course.image}
@@ -35,7 +34,6 @@ function FeaturedCourses() {
                             </div>
                         </div>
                     </Link>
-
                 ))}
             </div>
             <div className="flex justify-center mt-6 mb-6">

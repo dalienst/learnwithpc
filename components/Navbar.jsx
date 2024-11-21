@@ -10,8 +10,8 @@ function Navbar() {
     };
 
     return (
-        <nav className="bg-white shadow py-4 rounded-lg m-2">
-            <div className="container-fluid px-3 mx-auto flex justify-between items-center">
+        <nav className="bg-white shadow py-4">
+            <div className="container-fluid px-8 mx-auto flex justify-between items-center">
                 <Link href="/">
                     <Image src="/logo.svg" alt="logo" width={200} height={200} />
                 </Link>
@@ -28,12 +28,12 @@ function Navbar() {
                 {/* Menu Items (Large Screens) */}
                 <ul className={`hidden lg:flex space-x-4`}>
                     <li>
-                        <Link href="/" className=" hover:text-gray-300">
+                        <Link href="/" className="">
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link href="/courses" className=" hover:text-gray-300">
+                        <Link href="/courses" className="">
                             Courses
                         </Link>
                     </li>
@@ -44,17 +44,17 @@ function Navbar() {
             <div className={`${isOpen ? "block" : "hidden"} lg:hidden`}>
                 <ul className="flex flex-col space-y-4 p-4">
                     <li>
-                        <Link href="/" className=" hover:text-gray-300 block">
+                        <Link href="/" className="block">
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link href="/blogs" className=" hover:text-gray-300 block">
+                        <Link href="/blogs" className="block">
                             Courses
                         </Link>
                     </li>
                     <li>
-                        <Link href="/about" className=" hover:text-gray-300 block">
+                        <Link href="/about" className="block">
                             About
                         </Link>
                     </li>

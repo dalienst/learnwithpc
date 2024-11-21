@@ -14,10 +14,9 @@ function Courses() {
     course.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
   return (
-    <>
       <main className="container mx-auto mb-3 px-4 py-3 max-w-screen-xl">
         {/* Aligning All Courses and Search Bar */}
-        <div className='flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start mb-6 w-full'>
+        <div className='flex flex-col sm:flex-row justify-center md:px-8 sm:justify-between items-center sm:items-start mb-6 w-full'>
           <h4 className="text-2xl font-bold mb-4 sm:mb-0">All Courses</h4>
           <div className="w-full sm:w-auto">
             <form className="w-full sm:w-auto">
@@ -64,7 +63,6 @@ function Courses() {
           ))}
         </div>
       </main>
-    </>
   );
 }
 
