@@ -5,6 +5,10 @@ export const createBooking = async (values) => {
   await apiActions?.post("/api/bookings/create/", values);
 };
 
+export const updateBooking = async (slug, formData, axios) => {
+  await apiActions?.patch(`/api/bookings/${slug}/`, formData, axios);
+};
+
 export const getBookings = async (axios) => {
   const response = await apiActions?.get("/api/bookings/", axios);
   return response?.data?.results;
