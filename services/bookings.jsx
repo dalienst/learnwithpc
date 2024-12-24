@@ -1,0 +1,22 @@
+"use client";
+import { apiActions } from "@/tools/api";
+
+export const createBooking = async (values) => {
+  await apiActions?.post("/api/bookings/create/", values);
+};
+
+export const getBookings = async (axios) => {
+  const response = await apiActions?.get("/api/bookings/", axios);
+  return response?.data?.results;
+};
+
+export const getBookingDetail = async (slug, axios) => {
+  const response = await apiActions?.get(`/api/bookings/${slug}/`, axios);
+  return response?.data;
+};
+
+export const clientGetBookingDetail = async (reference) => {
+  // Fetches the details about their booking
+  const response = await apiActions?.get(`/api/bookings/${reference}/`);
+  return response?.data;
+};
