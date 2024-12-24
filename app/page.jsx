@@ -72,7 +72,6 @@ function page() {
             <h1 className="font-bold text-3xl lg:text-4xl">Most Popular Courses</h1>
             <p>Ready to level up your skills? Our most popular courses offer expert-led instruction and hands-on projects to help you succeed.</p>
             <ul className="list-inside tracking-wide leading-relaxed">
-                <li className="flex gap-1 items-center"><Icon icon="pepicons-pop:checkmark-filled" width="1.2rem" height="1.2rem"  color="white" /> It&apos;s free</li>
                 <li className="flex gap-1 items-center"><Icon icon="pepicons-pop:checkmark-filled" width="1.2rem" height="1.2rem"  color="white" /> Expert instructor</li>
                 <li className="flex gap-1 items-center"><Icon icon="pepicons-pop:checkmark-filled" width="1.2rem" height="1.2rem"  color="white" /> Flexible learning</li>
                 <li className="flex gap-1 items-center"><Icon icon="pepicons-pop:checkmark-filled" width="1.2rem" height="1.2rem"  color="white" /> Real world examples</li>
