@@ -1,3 +1,5 @@
+"use client"
+
 import { signUp } from "@/tools/api";
 import { RegistrationSchema } from "@/validation";
 import { Formik, Form, Field, ErrorMessage } from "formik";
