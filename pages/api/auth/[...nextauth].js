@@ -71,7 +71,6 @@ export const authOptions = {
       const decodedToken = jwtDecode(token?.access) || {};
       // eslint-disable-next-line no-param-reassign
       session.user = { ...decodedToken, ...token };
-      console.log(session);
       return session;
     },
   },
