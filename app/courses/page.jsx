@@ -38,9 +38,9 @@ function Courses() {
         </div>
 
         {/* Course Cards */}
-        <div className="flex flex-wrap justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {filteredCourses?.map((course) => (
-            <Link href={`/courses/${course.reference}`} key={course.id} className="bg-white shadow border rounded-lg m-4 mx-2 p-4 lg:p-6 flex flex-col items-center lg:w-60 hover:shadow-lg hover:scale-105 transform transition-all duration-300 lg:max-sm:w-full lg:max-sm:mx-8">
+            <Link href={`/courses/${course.reference}`} key={course.id} className="bg-white shadow border rounded-lg m-4 mx-2 p-4 lg:p-6 flex flex-col items-center hover:shadow-lg hover:scale-105 transform transition-all duration-300 lg:max-sm:w-full lg:max-sm:mx-8">
               <section className='w-full mb-4' style={{ height: '200px' }}>
                 <Image
                   src={course.image}

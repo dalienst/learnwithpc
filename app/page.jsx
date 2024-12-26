@@ -5,8 +5,20 @@ import Image from "next/image"
 import Link from "next/link"
 import { topics } from '@/data/topics'
 import FeaturedCourses from "@/components/Courses"
+import { useFetchCourses } from "@/hooks/courses/actions"
+import { useEffect, useState } from "react"
 
-function page() {
+function LandingPage() {
+    const { isPending, data, error } = useFetchCourses();
+      const [featuredCourses, setFeaturedCourses] = useState([]);
+    
+      useEffect(() => {
+        const getRandomCourses = () => {
+          const shuffledCourses = data?.sort(() => 0.5 - Math.random());
+          return shuffledCourses?.slice(0, 7);
+        };
+        setFeaturedCourses(getRandomCourses());
+      }, [data]);
   return (
     <div>
     <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-5 px-4 lg:px-10 items-center">
@@ -88,9 +100,9 @@ function page() {
             </ul>
         </div>
     </div>
-    <FeaturedCourses/>
+    <FeaturedCourses courses={featuredCourses} isPending={isPending}/>
     </div>
   )
 }
 
-export default page
+export default LandingPage
