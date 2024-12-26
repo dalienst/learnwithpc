@@ -29,7 +29,7 @@ function Tutor() {
   if (!data) return <div className="h-screen grid place-content-center">No user found</div>
   return (
     <div className="flex-grow lg:h-full grid grid-cols-1 lg:grid-cols-2 gap-5 py-5">
-    <div className="bg-blue-50 rounded-xl pt-8 px-8 overflow-hidden">
+    <div className="bg-blue-50 rounded-xl mx-4 md:mx-0 pt-8 px-4 md:px-8 overflow-hidden">
       <span>
       <span className="text-2xl block font-semibold">Course Activity</span>
       <span className="text-blue-700 font-semibold">{formattedDate}</span>
@@ -90,7 +90,7 @@ function Tutor() {
         </li>
       </ul>
     </div>
-    <div className="pt-8 pr-8 overflow-hidden row-start-1 lg:row-start-auto">
+    <div className="pt-0 md:pt-8 mx-4 md:pr-8 overflow-hidden row-start-1 lg:row-start-auto">
       <div className="flex justify-between gap-5">
         <span className="">
           <span className='text-[15px] font-semibold'>{formattedDate}</span>
@@ -107,7 +107,7 @@ function Tutor() {
         </div>
       </div>
       <span className="text-[#818997] text-lg block mt-5 mb-2 font-semibold">My todos</span>
-      <ul className="w-3/4 flex flex-col text-sm text-navy gap-3 h-fit max-h-[150px] px-4 border-l-4 border-blue-600 p-2 rounded-xl overflow-auto">
+      <ul className="w-full md:w-3/4 flex flex-col text-sm text-navy gap-3 h-fit max-h-[150px] px-4 border-l-4 border-blue-600 p-2 rounded-xl overflow-auto">
       <li className="flex gap-2 items-center">
       ~ Internet of things (IoT)
       </li>

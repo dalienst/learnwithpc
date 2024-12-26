@@ -38,7 +38,7 @@ function Suggestions() {
       setSelectedCourses(getRandomCourses());
     }, []);
   return (
-   <ul className="w-3/4 flex flex-col gap-3 h-[260px] overflow-auto">
+   <ul className="w-full pr-2 md:pr-0 md:w-3/4 flex flex-col gap-3 h-[260px] overflow-auto">
     {selectedCourses?.map((course)=>(
         <li key={course.title} className="flex gap-2 items-center bg-blue-50 rounded-xl p-3">
           <span className="size-10 flex-shrink-0 bg-blue-50 rounded-lg grid place-content-center">
