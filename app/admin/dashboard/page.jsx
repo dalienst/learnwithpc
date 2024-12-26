@@ -1,7 +1,9 @@
+'use client'
 import React from "react";
+import { signOut } from "next-auth/react"
 
-function AdminDashboard() {
-  return <div>AdminDashboard</div>;
+async function AdminDashboard() {
+  return <div><button onClick={() => signOut()}>Sign out</button></div>;
 }
 
 export default AdminDashboard;

@@ -1,4 +1,5 @@
 'use client'
+import { signOut } from 'next-auth/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -44,7 +45,7 @@ function Navbar() {
           </li>
         ))}
       </ul>
-      <button className='bg-navy text-white rounded-lg p-2 flex items-center gap-1 w-full justify-center'><MdLogout />Log out</button>
+      <button className='bg-navy text-white rounded-lg p-2 flex items-center gap-1 w-full justify-center' onClick={() => signOut()}><MdLogout />Log out</button>
       </div>
     </nav>
   )
