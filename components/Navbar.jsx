@@ -43,19 +43,14 @@ function Navbar() {
             {/* Dropdown Menu for Small Screens */}
             <div className={`${isOpen ? "block" : "hidden"} lg:hidden`}>
                 <ul className="flex flex-col space-y-4 py-6 px-10 lg:p-4">
-                    <li>
+                    <li onClick={()=>setIsOpen(false)}>
                         <Link href="/" className="block">
                             Home
                         </Link>
                     </li>
-                    <li>
-                        <Link href="/blogs" className="block">
+                    <li onClick={()=>setIsOpen(false)}>
+                        <Link href="/courses" className="block">
                             Courses
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/about" className="block">
-                            About
                         </Link>
                     </li>
                 </ul>
