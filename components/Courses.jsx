@@ -6,7 +6,7 @@ import { FaClipboard, FaClock } from 'react-icons/fa6';
 function FeaturedCourses({courses, isPending}) {
     if (isPending) return <div className="h-screen grid place-content-center">Loading...</div>
     return (
-        <div className="container lg:mx-auto mb-3 px-4 py-3 max-w-screen-xl">
+        <div className="container lg:mx-auto mb-3 px-4 py-3 w-full md:max-w-screen-xl">
             <h2 className="font-poppins my-5 lg:my-10 text-center text-3xl font-bold">A-Level Courses</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {courses?.map((course) => (
