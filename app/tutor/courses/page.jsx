@@ -6,9 +6,9 @@ import Link from "next/link";
 
 function Courses() {
     const {isPending, data, error } = useFetchCourses();
-    if (isPending) return <div className="h-screen grid place-content-center">Loading...</div>
-    if (error) return <div className="h-screen grid place-content-center">Error: {error.message}</div>
-    if (!data) return <div className="h-screen grid place-content-center">No courses found</div>
+    if (isPending) return <div className="h-[80vh] grid place-content-center">Loading...</div>
+    if (error) return <div className="h-[80vh] grid place-content-center">Error: {error.message}</div>
+    if (!data) return <div className="h-[80vh] grid place-content-center">No courses found</div>
   return (
     <div className="h-full pr-4 pt-6 pb-4">
         <div className="bg-blue-50 h-full rounded-xl px-4 md:px-0 p-8 overflow-auto">
