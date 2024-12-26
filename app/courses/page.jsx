@@ -1,6 +1,6 @@
 "use client";
-import Hero from '@/components/courses/Hero';
-import { allcourses } from '@/data/allcourses';
+
+import { useFetchCourses } from '@/hooks/courses/actions';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -8,16 +8,20 @@ import { FaClipboard, FaClock } from 'react-icons/fa6';
 
 function Courses() {
   const [searchQuery, setSearchQuery] = useState('');
+  const {isPending, data, error } = useFetchCourses();
+      if (isPending) return <div className="h-screen grid place-content-center">Loading...</div>
+      if (error) return <div className="h-screen grid place-content-center">Error: {error.message}</div>
+      if (!data) return <div className="h-screen grid place-content-center">No courses found</div>
 
   // Filter courses based on search query
-  const filteredCourses = allcourses.filter((course) =>
+  const filteredCourses = data?.filter((course) =>
     course.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
   return (
       <main className="container mx-auto mb-3 px-4 py-3 max-w-screen-xl">
         {/* Aligning All Courses and Search Bar */}
         <div className='flex flex-col sm:flex-row justify-center md:px-8 sm:justify-between items-center sm:items-start mb-6 w-full'>
-          <h4 className="text-2xl font-bold mb-4 sm:mb-0">All Courses</h4>
+          <h1 className="text-2xl font-bold mb-4 sm:mb-0">All Courses</h1>
           <div className="w-full sm:w-auto">
             <form className="w-full sm:w-auto">
               <input
@@ -36,7 +40,7 @@ function Courses() {
         {/* Course Cards */}
         <div className="flex flex-wrap justify-center">
           {filteredCourses?.map((course) => (
-            <Link href={`/courses/${course.id}`} key={course.id} className="bg-white shadow border rounded-lg m-4 mx-2 p-6 flex flex-col items-center w-60 hover:shadow-lg hover:scale-105 transform transition-all duration-300 max-sm:w-full max-sm:mx-8">
+            <Link href={`/courses/${course.reference}`} key={course.id} className="bg-white shadow border rounded-lg m-4 mx-2 p-4 lg:p-6 flex flex-col items-center lg:w-60 hover:shadow-lg hover:scale-105 transform transition-all duration-300 lg:max-sm:w-full lg:max-sm:mx-8">
               <section className='w-full mb-4' style={{ height: '200px' }}>
                 <Image
                   src={course.image}
@@ -47,8 +51,8 @@ function Courses() {
                 />
               </section>
               <div className="text-start w-full mb-4">
-                <h6 className="font-sans mb-2 font-semibold">{course.title}</h6>
-                <div className="flex justify-between items-center mb-2">
+                <h1 className="font-sans mb-2 font-semibold">{course.title}</h1>
+                <div className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
                     <FaClock className='text-navy' />
                     <p className="text-base">{course.duration}</p>

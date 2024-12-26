@@ -42,7 +42,7 @@ function Navbar() {
 
             {/* Dropdown Menu for Small Screens */}
             <div className={`${isOpen ? "block" : "hidden"} lg:hidden`}>
-                <ul className="flex flex-col space-y-4 p-4">
+                <ul className="flex flex-col space-y-4 py-6 px-10 lg:p-4">
                     <li>
                         <Link href="/" className="block">
                             Home

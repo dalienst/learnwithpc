@@ -8,7 +8,6 @@ import { getUser } from "@/services/accounts";
 export function useFetchAccount() {
   const axios = useAxiosAuth();
   const userId = useUserId();
-
   return useQuery({
     queryKey: ["account", userId],
     queryFn: () => getUser(userId, axios),

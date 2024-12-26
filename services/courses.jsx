@@ -7,7 +7,7 @@ export const getCourses = async () => {
 };
 
 export const getCourseDetails = async (reference) => {
-  const response = await apiMultipartActions?.get(`/api/courses/${reference}/`);
+  const response = await apiMultipartActions?.get(`/api/courses/detail/${reference}/`);
   return response?.data;
 };
 
