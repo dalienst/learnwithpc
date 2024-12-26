@@ -6,8 +6,11 @@ import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 import NextAuthProvider from "@/providers/NextAuthProvider";
 import TanstackQueryProvider from "@/providers/TanstackQueryProvider";
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname()
+  const shouldApplyPadding = !pathname.includes('auth') || pathname.includes('tutor');
   return (
     <html lang="en">
       <head>
@@ -17,11 +20,11 @@ export default function RootLayout({ children }) {
         <Toaster position="top-center" />
         <NextAuthProvider>
           <TanstackQueryProvider>
-            <div className="fixed top-0 z-50 w-full">
+            {!pathname.includes('auth') && !pathname.includes('tutor') && <div className="fixed top-0 z-50 w-full">
               <Navbar />
-            </div>
-            <div className="pt-[90px]">{children}</div>
-            <Footer />
+            </div>}
+            <div className={!pathname.includes('tutor') && !pathname.includes('auth') ? 'pt-[90px]' : 'pt-0'}>{children}</div>
+           {!pathname.includes('auth') || !pathname.includes('tutor') && <Footer />}
           </TanstackQueryProvider>
         </NextAuthProvider>
       </body>

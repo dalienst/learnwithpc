@@ -21,6 +21,6 @@ export const getBookingDetail = async (slug, axios) => {
 
 export const clientGetBookingDetail = async (reference) => {
   // Fetches the details about their booking
-  const response = await apiActions?.get(`/api/bookings/${reference}/`);
+  const response = await apiActions?.get(`/api/bookings/detail/${reference}/`);
   return response?.data;
 };

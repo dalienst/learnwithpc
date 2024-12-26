@@ -1,6 +1,6 @@
 "use client";
-import Hero from '@/components/courses/Hero';
-import { allcourses } from '@/data/allcourses';
+
+import { useFetchCourses } from '@/hooks/courses/actions';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -8,9 +8,13 @@ import { FaClipboard, FaClock } from 'react-icons/fa6';
 
 function Courses() {
   const [searchQuery, setSearchQuery] = useState('');
+  const {isPending, data, error } = useFetchCourses();
+      if (isPending) return <div className="h-screen grid place-content-center">Loading...</div>
+      if (error) return <div className="h-screen grid place-content-center">Error: {error.message}</div>
+      if (!data) return <div className="h-screen grid place-content-center">No courses found</div>
 
   // Filter courses based on search query
-  const filteredCourses = allcourses.filter((course) =>
+  const filteredCourses = data?.filter((course) =>
     course.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
   return (
@@ -36,7 +40,7 @@ function Courses() {
         {/* Course Cards */}
         <div className="flex flex-wrap justify-center">
           {filteredCourses?.map((course) => (
-            <Link href={`/courses/${course.id}`} key={course.id} className="bg-white shadow border rounded-lg m-4 mx-2 p-4 lg:p-6 flex flex-col items-center lg:w-60 hover:shadow-lg hover:scale-105 transform transition-all duration-300 lg:max-sm:w-full lg:max-sm:mx-8">
+            <Link href={`/courses/${course.reference}`} key={course.id} className="bg-white shadow border rounded-lg m-4 mx-2 p-4 lg:p-6 flex flex-col items-center lg:w-60 hover:shadow-lg hover:scale-105 transform transition-all duration-300 lg:max-sm:w-full lg:max-sm:mx-8">
               <section className='w-full mb-4' style={{ height: '200px' }}>
                 <Image
                   src={course.image}

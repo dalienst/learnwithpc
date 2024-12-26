@@ -29,33 +29,45 @@ function Login() {
     setLoading(false);
   };
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col gap-6 items-center justify-center h-screen">
+       <h1 className="text-3xl font-semibold text-navy">
+        Sign in
+      </h1>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col items-center justify-center gap-4"
+        className="h-fit w-1/2 lg:w-1/3 space-y-6 rounded-xl border p-6"
       >
-        <h1 className="text-3xl font-semibold text-center ">Login</h1>
+       <div>
+        <label htmlFor="email" className="font-semibold">Email</label>
         <input
           type="email"
-          placeholder="Email"
-          className="p-2 border border-gray-300 rounded-md w-80"
+          id='email'
+          required
+          placeholder="e.g, johndoe@gmail.com"
+          className="p-2 border border-gray-300 rounded-md w-full"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+       </div>
+        <div>
+        <label htmlFor="password" className="font-semibold">Password</label>
         <input
           type="password"
-          placeholder="Password"
-          className="p-2 border border-gray-300 rounded-md w-80"
+          id='password'
+          required
+          placeholder="********"
+          className="p-2 border border-gray-300 rounded-md w-full"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        </div>
         <button
           type="submit"
           disabled={loading}
           className={`w-full px-4 py-2 text-white font-semibold rounded-md shadow ${
             loading
-              ? "bg-green-300"
-              : "bg-green-600 hover:bg-green-700 focus:ring-2 focus:ring-green-400 focus:ring-offset-2"
+              ? "bg-[rgba(39,51,75,0.9)]"
+              : "bg-navy hover:bg-[rgb(33,43,62)] focus:ring-2 focus:ring-navy focus:ring-offset-2"
           }`}
         >
           {loading ? "Logging in..." : "Login"}
@@ -63,7 +75,7 @@ function Login() {
       </form>
       <p className="mt-4">
         Don&apos;t have an account?{" "}
-        <Link href="/auth/register" className="text-blue-500">
+        <Link href="/auth/signup" className="text-blue-500">
           Register
         </Link>
       </p>
