@@ -64,6 +64,7 @@ function Navbar() {
           </li>
         ))}
       </ul>
+      <button className='bg-navy text-white rounded-lg p-2 px-5 flex items-center gap-1 mt-5 justify-center' onClick={() => signOut()}><MdLogout />Log out</button>
       </div>}
     </nav>
   )
