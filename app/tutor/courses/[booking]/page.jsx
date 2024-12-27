@@ -7,10 +7,11 @@ function CourseBookings({params:{booking}}) {
     if (isPending) return <div className="h-screen grid place-content-center">Loading...</div>
     console.log(data,'booking details')
   return (
-    <div className="h-full pr-4 pt-6 pb-4">
-        <div className="bg-blue-50 h-full rounded-xl px-4 md:px-4 p-8 overflow-auto">
+    <div className="h-full px-2 pt-6 pb-4">
+        <div className="bg-blue-50 h-full rounded-xl px-4 md:px-4 p-8 overflow-hidden">
         <h1 className="font-semibold text-2xl">Course: {data?.title}</h1>
         <h1 className="font-semibold text-lg">Bookings for this course</h1>
+        <div className="overflow-x-auto">
         <table className="border mt-5">
           <thead>
             <tr>
@@ -35,6 +36,7 @@ function CourseBookings({params:{booking}}) {
           ))}
           </tbody>
         </table>
+        </div>
         </div>
     </div>
   )
