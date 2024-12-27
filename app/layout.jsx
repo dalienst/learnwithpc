@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
               <Navbar />
             </div>}
             <div className={!pathname.includes('tutor') && !pathname.includes('auth') ? 'pt-[90px]' : 'pt-0'}>{children}</div>
-           {!pathname.includes('auth') || !pathname.includes('tutor') && <Footer />}
+           {!pathname.includes('auth') && !pathname.includes('tutor') && <Footer />}
           </TanstackQueryProvider>
         </NextAuthProvider>
       </body>

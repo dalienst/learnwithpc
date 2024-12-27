@@ -11,7 +11,7 @@ function Navbar() {
 
     return (
         <nav className="bg-white shadow py-4">
-            <div className="container-fluid px-8 mx-auto flex justify-between items-center">
+            <div className="container-fluid pl-2 pr-3 mx-auto flex justify-between items-center">
                 <Link href="/">
                     <Image src="/logo.svg" alt="logo" width={200} height={200} />
                 </Link>

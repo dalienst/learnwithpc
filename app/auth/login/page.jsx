@@ -1,5 +1,6 @@
 "use client";
 import { signIn } from "next-auth/react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
@@ -29,37 +30,46 @@ function Login() {
     setLoading(false);
   };
   return (
-    <div className="flex flex-col gap-6 items-center justify-center h-screen">
-       <h1 className="text-3xl font-semibold text-navy">
-        Sign in
-      </h1>
+    <div className="flex px-4 flex-col gap-6 items-center justify-center h-screen relative">
+      <Image
+        src="/logo.svg"
+        alt="logo"
+        width={200}
+        height={200}
+        className="absolute top-4 left-3"
+      />
+      <h1 className="text-3xl font-semibold text-navy">Sign in</h1>
       <form
         onSubmit={handleSubmit}
-        className="h-fit w-1/2 lg:w-1/3 space-y-6 rounded-xl border p-6"
+        className="h-fit w-full md:w-1/3 space-y-6 rounded-xl border p-6"
       >
-       <div>
-        <label htmlFor="email" className="font-semibold">Email</label>
-        <input
-          type="email"
-          id='email'
-          required
-          placeholder="e.g, johndoe@gmail.com"
-          className="p-2 border border-gray-300 rounded-md w-full"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-       </div>
         <div>
-        <label htmlFor="password" className="font-semibold">Password</label>
-        <input
-          type="password"
-          id='password'
-          required
-          placeholder="********"
-          className="p-2 border border-gray-300 rounded-md w-full"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+          <label htmlFor="email" className="font-semibold">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="e.g, johndoe@gmail.com"
+            className="p-2 border border-gray-300 rounded-md w-full"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div>
+          <label htmlFor="password" className="font-semibold">
+            Password
+          </label>
+          <input
+            type="password"
+            id="password"
+            required
+            placeholder="********"
+            className="p-2 border border-gray-300 rounded-md w-full"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
         </div>
         <button
           type="submit"

@@ -3,6 +3,7 @@
 import { signUp } from "@/tools/api";
 import { RegistrationSchema } from "@/validation";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
@@ -43,7 +44,8 @@ function SignUp() {
         }}
       >
         {({ touched }) => (
-            <div className="grid place-content-center h-screen">
+            <div className="grid place-content-center h-screen relative">
+              <Image src="/logo.svg" alt="logo" width={200} height={200} className='absolute top-4 left-3'/>
               <h3 className="text-2xl font-semibold text-center text-navy">Sign up</h3>
               <Form className="border w-[90vw] md:w-[460px] p-4 rounded-lg mt-3">
                 <div className="flex flex-col gap-3 mb-3">
