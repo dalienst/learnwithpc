@@ -2,6 +2,7 @@
 
 import { useFetchCourses } from "@/hooks/courses/actions";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { AiOutlineSwapRight } from "react-icons/ai";
 
@@ -34,7 +35,7 @@ function CourseActivity({formattedDate}) {
                 <span className="text-white text-sm">Booked</span>
               </div>
               </div>
-              <span className="text-white flex items-end justify-end text-sm gap-1 py-2">See bookings <AiOutlineSwapRight size={20} color="white"/> </span>
+              <Link href={`/tutor/courses/${course.reference}/`} className="text-white flex items-end justify-end text-sm gap-1 py-2">See bookings <AiOutlineSwapRight size={20} color="white"/> </Link>
             </li>
             ))
             :
